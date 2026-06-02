@@ -35,5 +35,6 @@ amat = np.random.randn(m,n)
 amat_T = amat.T
 new_m = amat@amat_T # taking a matrix and multiplying by its transpose results in a square matrix
 print(np.shape(new_m)) # show square matrix
-print(new_m - new_m.T) # showing symmetry
+print(new_m - new_m.T) # showing symmetry (if taking a square matrix and subtracting its transpose results in the matrix with all 0s, it's symmetric)
+
 
