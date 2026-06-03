@@ -4,8 +4,7 @@ import matplotlib.pyplot as plt
 M = np.array([[.5,1],
             [1,.5]])
 
-vcomp = np.linspace(-2,2,40)
-
+vcomp = np.linspace(-2,2,80)
 for a in vcomp:
     v = np.array([1, a])
     Mv = M@v # transformed vector

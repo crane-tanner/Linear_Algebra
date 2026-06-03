@@ -37,13 +37,29 @@ y3 = np.array([6,2])
 # plt.legend()
 # plt.show()
 
-# System 2 (Infinitely many solutions)
+# System 2 (Infinitely many solutions; Same line)
+
+xlim = np.array([0,10])
+yy1 = -X2[0,0]/X2[0,1]*xlim + y2[0]/X2[0,1]
+yy2 = -X2[1,0]/X2[1,1]*xlim + y2[1]/X2[1,1]
+
+# b = np.linalg.solve(X2,y2) # equations are not linearly independent
+# print(b)
+
+plt.plot(xlim, yy1, 'b', label='eq1')
+plt.plot(xlim, yy2, 'r--', label='eq2')
+#plt.plot(b[0], b[1], 'ko', markersize=9, label='Solution')
+plt.grid()
+plt.legend()
+plt.show()
+
+# System 3 (Parallel lines, no solution)
 
 # xlim = np.array([0,10])
-# yy1 = -X2[0,0]/X2[0,1]*xlim + y2[0]/X2[0,1]
-# yy2 = -X2[1,0]/X2[1,1]*xlim + y2[1]/X2[1,1]
+# yy1 = -X3[0,0]/X3[0,1]*xlim + y3[0]/X3[0,1]
+# yy2 = -X3[1,0]/X3[1,1]*xlim + y3[1]/X3[1,1]
 #
-# b = np.linalg.solve(X2,y2) # equations are not linearly independent
+# b = np.linalg.solve(X3,y3)
 # print(b)
 #
 # plt.plot(xlim, yy1, 'b', label='eq1')
@@ -52,19 +68,3 @@ y3 = np.array([6,2])
 # plt.grid()
 # plt.legend()
 # plt.show()
-
-# System 3 (Parallel lines, no solution)
-
-xlim = np.array([0,10])
-yy1 = -X3[0,0]/X3[0,1]*xlim + y3[0]/X3[0,1]
-yy2 = -X3[1,0]/X3[1,1]*xlim + y3[1]/X3[1,1]
-
-#b = np.linalg.solve(X3,y3)
-#print(b)
-
-plt.plot(xlim, yy1, 'b', label='eq1')
-plt.plot(xlim, yy2, 'r', label='eq2')
-#plt.plot(b[0], b[1], 'ko', markersize=9, label='Solution')
-plt.grid()
-plt.legend()
-plt.show()

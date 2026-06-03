@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import sympy as sym
-from IPython.display import display, Math
+#from IPython.display import display, Math
 from mpl_toolkits.mplot3d import Axes3D
 from sympy.printing.pretty.pretty_symbology import line_width
 
