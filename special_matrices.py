@@ -10,8 +10,8 @@ from scipy.linalg import toeplitz
 # print(d)
 #
 # T = np.random.randn(8,8)
-# plt.imshow(np.triu(T)) # upper triangular matrix with all 0s below diagonal
-# plt.imshow(np.tril(T)) # lower triangular matrix with all 0s above the diagonal
+# plt.imshow(np.triu(T)) # upper triangular matrix (all 0s below diagonal)
+# plt.imshow(np.tril(T)) # lower triangular matrix (all 0s above the diagonal)
 # plt.show()
 
 r_integer_mat = np.random.randint(-4,5, (4,4))
